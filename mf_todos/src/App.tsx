@@ -7,10 +7,6 @@ import Todos from './components/Todos/Todos'
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
     <div className="hidden">this is my hidden div</div>
-    {/* <div>Name: mf_todos</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Tailwind</div> */}
     <Todos></Todos>
   </div>
 )

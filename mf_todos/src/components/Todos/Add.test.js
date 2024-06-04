@@ -1,6 +1,30 @@
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import {Add} from './Add';
+import Add from './Add';
+
+import '@testing-library/jest-dom'
+// import Button from "./Button";
+
+afterEach(() => {
+  cleanup(); // Resets the DOM after each test suite
+})
+
+
+describe("Button Component", () => {
+  const setToggle = jest.fn();
+  render(<App />);
+  const input = screen.getByText("task");
+
+  // Test 1
+  test("Button Rendering", () => {
+      expect(input).toBeInTheDocument();
+  })
+
+  // Test 2 
+  test("Button Text", () => {
+      expect(input).toHaveTextContent("Click Me!");
+  })
+})
 
 it("should not show any error message when the component is loaded", () => {
   render(<Add />);
