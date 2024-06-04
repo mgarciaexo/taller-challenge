@@ -1,4 +1,4 @@
-# Leep Product Subscription Serverless
+# Taller Todo challenge repository
 
 This proyect contains the desktop project and a microfront end called todos in order to manage a TODO list.
 
